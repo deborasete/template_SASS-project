@@ -1,0 +1,23 @@
+@use 'variables';
+
+@mixin container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+@mixin product-button {
+    display: block;
+    background-color: variables.$bg-color-button;
+    color: variables.$font-color-white;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: variables.$bg-color-button-hover;
+    }
+}
